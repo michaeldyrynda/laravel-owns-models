@@ -13,6 +13,12 @@ trait OwnsModels
 
 
     /**
+     * {@inheritdoc}
+     */
+    abstract public function getKey();
+
+
+    /**
      * Determine if this model owns the given model.
      *
      * @param  \Illuminate\Database\Eloquent\Model  $model
