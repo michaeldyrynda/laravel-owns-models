@@ -57,7 +57,7 @@ if ($user->doesntOwn($post)) {
 }
 ```
 
-Prior to Laravel 5.2, the primary key of the model was returned as a string. As a result, this package does loose comparisons by default, to provide maximum version compatibility.
+Prior to [Laravel 5.2](https://github.com/illuminate/database/commit/c1d045f3b6b146c2fa392758ff21d5f26d4ebb8f#diff-ea23035e94022c6bdbca2a2cd7647ee0), the primary key of the model was returned as a string. As a result, this package does loose comparisons by default, to provide maximum version compatibility.
 
 If you want to perform strict comparisons in older versions, you can add your primary key field to the `$casts` property as an integer and call the `owns` method with additional parameters:
 
